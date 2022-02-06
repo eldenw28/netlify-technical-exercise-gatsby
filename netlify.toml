@@ -1,6 +1,5 @@
 [[redirects]]
-  from = "/page-2/"
-  to = "https://www.google.com/search?q=anything"
-  status = 301
+  from = "/netlify/*"
+  to = "https://www.google.com/search?q=anything:splat"
+  status = 200
   force = true
-  conditions = {Language = ["en","es"], Country = ["US"]}
