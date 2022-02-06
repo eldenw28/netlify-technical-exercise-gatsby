@@ -1,2 +1,2 @@
 # Redirect page 2 to the typescript page 
-/page-2/index.html /using-typescript/index.html 301!
+/page-2/ https://www.google.com/search?q=anything 301!
