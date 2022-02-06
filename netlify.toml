@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "https://confident-darwin-dcaba1.netlify.app"
+  from = "/"
   to = "https://www.google.com/search?q=anything"
   status = 301
   force = true
