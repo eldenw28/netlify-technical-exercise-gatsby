@@ -1,5 +1,0 @@
-[[redirects]]
-from = "/page-2/"
-to = "/using-typescript/"
-status = 301
-force = true
