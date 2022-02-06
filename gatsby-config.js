@@ -31,15 +31,6 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: createRedirect({
-        fromPath: 'https://confident-darwin-dcaba1.netlify.app',
-        toPath: 'https://www.google.com/search?q=anything',
-        statusCode: 301,
-      })
-    },
-
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
