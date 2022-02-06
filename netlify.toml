@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/page-2/index.html"
-to = "/using-typescript/index.html"
+from = "/page-2/"
+to = "/using-typescript/"
 status = 301
-force = false
+force = true
