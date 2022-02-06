@@ -1,2 +1,2 @@
 # Redirect page 2 to the typescript page 
-/page-2/ /using-typescript/ 301!
+/page-2/index.html /using-typescript/index.html 301!
