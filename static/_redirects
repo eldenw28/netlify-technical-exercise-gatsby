@@ -1,2 +1,2 @@
 # Redirect page 2 to the typescript page 
-https://confident-darwin-dcaba1.netlify.app/page-2/ https://www.google.com/search?q=anything 301!
+/page-2/ https://www.google.com/search?q=anything 301!
