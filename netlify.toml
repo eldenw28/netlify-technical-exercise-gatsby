@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/netlify.com/*"
-  to = "https://www.google.com/search?q=anything:splat"
+  from = "/netlify.com/support"
+  to = "https://www.google.com/search?q=anything"
   status = 200
   force = true
