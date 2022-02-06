@@ -1,7 +1,0 @@
-[[redirects]]
-  from = "https://confident-darwin-dcaba1.netlify.app/"
-  to = "https://www.google.com/search?q=anything"
-  status = 301
-  force = false
-  query = {path = ":path"} #  apply this rule for /old-path?path=example
-  conditions = {Language = ["en","es"], Country = ["US"]}
