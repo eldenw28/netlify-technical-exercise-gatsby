@@ -1,5 +1,26 @@
 [[redirects]]
-  from = "https://www.netlify.com/support"
+  from = "https://www.netlify.com/anything"
   to = "https://www.google.com/search?q=anything"
   status = 200
   force = true
+  conditions = {Role = ["admin", "cms"]}
+  [redirects.headers]
+    X-From = "Netlify"
+
+  [[redirects]]
+  from = "https://netlify.com/anything"
+  to = "https://www.google.com/search?q=anything"
+  status = 200
+  force = true
+  conditions = {Role = ["admin", "cms"]}
+  [redirects.headers]
+    X-From = "Netlify"
+
+  [[redirects]]
+  from = "/netlify/anything"
+  to = "https://www.google.com/search?q=anything"
+  status = 200
+  force = true
+  conditions = {Role = ["admin", "cms"]}
+  [redirects.headers]
+    X-From = "Netlify"
