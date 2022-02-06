@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/"
+  from = "/page-2/"
   to = "https://www.google.com/search?q=anything"
   status = 301
   force = true
