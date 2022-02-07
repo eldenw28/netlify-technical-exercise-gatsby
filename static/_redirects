@@ -1,4 +1,3 @@
 # Redirect page 2 to the typescript page 
 /page-2/ https://www.google.com/search?q=anything 301!
 /netlify/anything/ https://www.google.com/search?q=anything 200!
-http://www.netlify.com/anything https://www.google.com/search?q=anything 200!
