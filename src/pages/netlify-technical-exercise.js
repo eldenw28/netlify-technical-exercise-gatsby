@@ -72,7 +72,9 @@ SSL/HTTPS are the fundamental technology underpinning all web security.
 <p>I wanted to get a redirect working prior to answering this question and ran into a lot of trouble. I'm not going to regale you with all of my trials and tribulations but suffice it to say that I learned that Gatsy has a built in router that was preventing me from getting it working the way I expected using one of the existing pages in the sample project. The key discovery that helped me learn about this was when I realized that while I couldn't click on one of the links and get a successful redirect, I could get it to redirect if I entered the url directly into the search bar.</p>
 <p>The proxy redirect above was accomplished using a _redirect file. I can sometims be a bit of a perfectionist so I'd like to have done it using the netlify.toml file, and it's entirely possible I could now get that working fairly quickly, but considering how much time I've already spent on this question I'm going to call it good and move on.</p>
 <h3>Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</h3>
-<p><a href="https://confident-darwin-dcaba1.netlify.app/.netlify/functions/hello">Hello World Function</a></p>
+<p><a href="https://confident-darwin-dcaba1.netlify.app/.netlify/functions/hello">Hello World Function I created manually</a></p>
+<p><a href="
+https://confident-darwin-dcaba1.netlify.app/.netlify/functions/hello-world">Hello World Function I created using netlify cli</a></p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
