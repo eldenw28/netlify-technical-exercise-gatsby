@@ -1,9 +1,9 @@
-exports.createPages = ({ actions }) => {
-  const { createRedirect } = actions;
-  createRedirect({
-    fromPath: "https://www.netlify.com/anything", 
-    toPath: "https://www.google.com/search?q=anything/:splat", 
-    isPermanent: true, 
-    force: true
-  });
-};
+exports.createPages = async ({ actions }) => {
+  const { createPage } = actions
+  createPage({
+    path: "/using-dsg",
+    component: require.resolve("./src/templates/using-dsg.js"),
+    context: {},
+    defer: true,
+  })
+}
