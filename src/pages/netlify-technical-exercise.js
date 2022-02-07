@@ -61,8 +61,18 @@ SSL/HTTPS are the fundamental technology underpinning all web security.
 -----
 <p>Based on my understanding of what I could find about this error, it seems like the <i>...code: 2</i> error is a high-level error indicating a misconfiguration or, perhaps missing assets. If you dig deeper into the logs, you should be able to find more specifics. After reading many pages that contained a myriad of different specific errors, I decided that I was going too far down the path of trying to troubleshoot someone's build which is why I pulled back in my customer response. I wanted to start with two basic questions. First, if you can't build locally, I believe that's outside of our scope at Netlify and the customer needs to resolve those issues before they try to deploy on Netlify. Second, several of the pages I found seemed to indicate that the build failures could be related to warnings rather than actual errors that the customer's local build is set to ignore but Netlify does not, or they may have customized the build command. This is why I asked for the screenshot of their build settings. I want to see what build command they are using without the possibility of typos. I assume that Netlify preconfigures the build command based on the programming language being used. Still I would compare their build command to the commands listed in <a href="https://docs.netlify.com/configure-builds/common-configurations/">https://docs.netlify.com/configure-builds/common-configurations/.</a></p>
 <h3>How would you set up an http 301 status redirect from “/netlify/anything” on your site, to https://www.google.com/search?q=anything How about a proxy redirect? Please add that proxy redirect rule to your site.</h3>
+<Link to="/netlify/anything">/netlify/anything proxy link</Link> <br />
 <p></p>
-<Link to="/netlify/anything">/netlify/anything</Link> <br />
+<p>I found three methods in to perform a redirect.</p>
+<ol>
+  <li>Creating a netlify.toml file located in the root directory of a project in which you define your redirect rules.</li>
+  <li>Creating a folder named static at the root level of a project inside of which you create a _redirect file containing your redirect rules.</li>
+  <li>Using the netlify-gatsby-plugin which creates a _redirects file at the root of the public folder in which you can use the createRedircts action to define your redirect rules.</li>
+</ol>
+<p>I wanted to get a redirect working prior to answering this question and ran into a lot of trouble. I'm not going to regale you with all of my trials and tribulations but suffice it to say that I learned that Gatsy has a built in router that was preventing me from getting it working the way I expected using one of the existing pages in the sample project. The key discovery that helped me learn about this was when I realized that while I couldn't click on one of the links and get a successful redirect, I could get it to redirect if I entered the url directly into the search bar.</p>
+<p>The proxy redirect above was accomplished using a _redirect file. I can sometims be a bit of a perfectionist so I'd like to have done it using the netlify.toml file, and it's entirely possible I could now get that working fairly quickly, but considering how much time I've already spent on this question I'm going to call it good and move on.</p>
+<h3>Please attempt to deploy a function on our service. This need not be complicated, could be "Hello World" or something fancier. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot, instead. We won't be asking you to share the function (but you can if you want to!), we just want to hear about the experience in some detail.</h3>
+<p><a href="/.netlify/functions/hello.js">Hello World Function</a></p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
