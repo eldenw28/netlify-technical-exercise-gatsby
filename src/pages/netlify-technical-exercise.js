@@ -7,6 +7,8 @@ import Seo from "../components/seo"
 const TechExercise = () => (
   <Layout>
     <Seo title="Netlify Technical Exercise" />
+    <p><a href="https://github.com/eldenw28/netlify-technical-exercise-gatsby">The Github repo for this site.</a></p>
+    <p></p>
     <h3>Talk about how you made your site and why you chose the tools you did. Briefly explain one challenge you experienced in setting up this site and how you solved it.</h3>
     <p>I created this site by simply following the prompts on Netlify. I chose Gatsby because I'd already created and uploaded a React project earlier this week. While I'm no React expert, I wanted to stick with something that was based on what I'd already been using. It was a slick process and I encountered no issues so I'll refer to my earlier attempt. I spun that site up locally and used git to upload it to Github.</p>
     <p>I encountered difficulty in the creation of my first site. That process got me into what I like to think of as the linux reverse onion. (I.e. You try to solve a problem, only to run into another encompassing problem that prevents you from solving the first, expanding out from the core issue. This can go on for multiple onion layers on a bad day.) I couldn't create a React site because I had an old version of node installed and needed to upgrade. I couldn't update node because my version of npx was also too old. Luckily, my issues were limited to two onion layers in this case and I was able to get the problems resolved fairly easily.</p>
